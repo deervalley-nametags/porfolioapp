@@ -1,17 +1,13 @@
 #navbar-container{
     position: fixed;
-    left: 10px;
-    min-width: 200px;
-    top: 210px;
+    left: 0px;
+    top: 0px;
     background-color: #3e8bb0;
     color: white;
+    border: 1px solid #444;
 }
 #navbar-bg{
-    position: fixed;
-    left: 0px;
-    width: 200px;
-    height: 100%;
-    background-color: #16658a;
+    display: none;
 }
 
 .navbar-row:hover{
@@ -22,7 +18,6 @@
 .navbar-icon{
     height: 100%;
     font-size: 25px;
-    margin-left: 5px;
 }
 .navbar-row{
     display: flex;
@@ -34,18 +29,49 @@
 .navbar-h4{
     margin-top: 8px;
     padding-right: 20px;
+    padding-left: 10px;
     font-weight: 500;
     font-size: 20px;
 }
 .navbar-col-a{
-    width:55px;
+    width:40px;
     padding: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: center;
+}
+.navbar-col-b{
+    display: flex;
+    width: 145px;
+}
+.hide{
+    display: none;
+}
+a.navbar-row{
+    color: white;
+}
+a.navbar-row:hover{
+    text-decoration: none;
 }
 
-#nav-face{
-    background-color: #555;
-    width: 200px;
-    height: 200px;
+@media (min-width: 992px){
+    #navbar-bg{
+        display: flex;
+        position: fixed;
+        left: 0px;
+        width: 200px;
+        height: 100%;
+        background-color: #16658a;
+    }
+    #navbar-container{
+        left: 10px;
+        top: 10px;
+    }
+    #hamburger-stack-container{
+        display: none;
+    }
+    .hide{
+        display: flex;
+        width: 145px;
+    }
 }

@@ -3,18 +3,23 @@ import '../css/App.css';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import NavPage from './NavPage.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <Row>
+    <Router>
       <NavPage />
 
       <Row>
         <Col>
-          a
+          
         </Col>
       </Row>
-    </Row>
+    </Router>
   );
 }
 
