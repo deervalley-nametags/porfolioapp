@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from '../img/logo.svg';
-import './App.css';
+import '../css/App.css';
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import NavPage from './NavPage.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row>
+      <NavPage />
+
+      <Row>
+        <Col>
+          a
+        </Col>
+      </Row>
+    </Row>
   );
 }
 
