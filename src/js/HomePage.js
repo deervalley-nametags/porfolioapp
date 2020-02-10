@@ -5,6 +5,32 @@ import {
     Col
 } from 'react-bootstrap';
 import '../css/home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faReact,
+    faNodeJs,
+    faHtml5,
+    faBootstrap,
+    faGoogle,
+    faJsSquare
+} from '@fortawesome/free-brands-svg-icons';
+import { 
+    faDatabase,
+    faMobile,
+    faKeyboard,
+    faCode,
+    faCommentSlash,
+    faSquareRootAlt,
+    faMedal,
+    faCheckSquare,
+    faSkiing,
+    faAnchor,
+    faFish,
+    faTheaterMasks,
+    faMugHot,
+    faVrCardboard,
+    faSitemap
+} from '@fortawesome/free-solid-svg-icons';
 
 //breakpoint sizes
 const xsSize = 12;
@@ -38,16 +64,17 @@ function HomePage() {
             <Row className="mt-3">
                 <Col xs={xsSize} md={mdSize} lg={lgSize}>
                     <h4 className="home-h4">TECHNOLOGIES</h4>
-                    <p className="font-grey">No need to reinvent the Web</p>
+                    <p className="font-grey">No need to reinvent the <s>wheel</s> Web</p>
                     <ul>
-                        <li>React</li>
-                        <li>Node</li>
-                        <li>jQuery</li>
-                        <li>HTML / CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Google Firebase / Firestore</li>
-                        <li>MySQL</li>
-                        <li>Mobile First / Responsive</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faReact} />React</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faNodeJs} />Node</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faJsSquare} />jQuery</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faHtml5} />HTML / CSS</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faBootstrap} />Bootstrap</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faVrCardboard} />Pixi.js (2d Engine)</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faGoogle} />Google Firebase / Firestore</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faDatabase} />MySQL</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faMobile} />Mobile First / Responsive</li>
                     </ul>
                 </Col>
                 <Col xs={xsSize} md={mdSize} lg={lgSize}>
@@ -62,22 +89,37 @@ function HomePage() {
                     <h4 className="home-h4">DESIGN PHILOSOPHIES</h4>
                     <p className="font-grey">I think Socrates used these too...</p>
                     <ul>
-                        <li>Readable Code</li>
-                        <li>Useful Comment Blocks</li>
-                        <li>Don't Repeat Yourself</li>
-                        <li>Reusable Functions</li>
-                        <li>Staying on Top of Best Practices</li>
-                        <li>Agile</li>
-                        <li>REST</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faCode} />Readable Code</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faKeyboard} />Useful Comment Blocks</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faCommentSlash} />Don't Repeat Yourself</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faSquareRootAlt} />Reusable Functions</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faMedal} />Staying on Top of Best Practices</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faSkiing} />Agile</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faCheckSquare} />REST</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faSitemap} />UI Flow</li>
                     </ul>
                 </Col>
             </Row>
-            <Row className="mt-3">
+            <Row className="mt-3 mb-5">
                 <Col xs={xsSize} md={mdSize} lg={lgSize}>
-                    <h4 className="home-h4">RANDOM ABOUT</h4>
+                    <h4 className="home-h4">RANDOM ABOUT ME</h4>
                     <p className="font-grey">Personality Boost in 1.. 2.. 3..</p>
                     <ul>
-                        <li>Readable</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faAnchor} />
+                            Once turned a canoe into a sailboat
+                        </li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faTheaterMasks} />
+                            Enjoy scriptwriting and animating
+                        </li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faFish} />
+                            Speak quite a bit of Swedish
+                        </li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faKeyboard} />
+                            I can type, like, a bajillion words per minute
+                        </li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faMugHot} />
+                            I think I worship coffee
+                        </li>
                     </ul>
                 </Col>
                 <Col xs={xsSize} md={mdSize} lg={lgSize}>

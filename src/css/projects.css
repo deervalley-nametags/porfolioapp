@@ -1,0 +1,13 @@
+.project-tile{
+    margin-top: 30px;
+}
+.project-tile-inner{
+    border: 1px solid #fa4b41;
+    text-align: center;
+}
+.projects-h4{
+    color: #3e8bb0;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
