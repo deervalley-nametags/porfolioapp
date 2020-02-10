@@ -1,0 +1,26 @@
+ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+#home-face-pic{
+}
+
+.font-grey{
+    color: #bbb;
+    padding-left: 15px;
+}
+.home-pic{
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+}
+.row{
+    justify-content: center;
+}
+.home-h4{
+    color: #3e8bb0;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
