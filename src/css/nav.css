@@ -5,6 +5,7 @@
     background-color: #3e8bb0;
     color: white;
     border: 1px solid #444;
+    z-index: 30;
 }
 #navbar-bg{
     display: none;
@@ -61,17 +62,18 @@
     text-align: center;
 }
 .navbar-col-b{
-    display: flex;
-    width: 145px;
-}
-.hide{
     display: none;
+    width: 145px;
 }
 a.navbar-row{
     color: white;
 }
 a.navbar-row:hover{
     text-decoration: none;
+}
+.project-info-icon{
+    margin-right: 5px;
+    font-size: 18px;
 }
 
 @media (min-width: 992px){
@@ -88,10 +90,8 @@ a.navbar-row:hover{
     #info-panel{
         display: flex;
     }
-
-    .hide{
-        display: flex;
-        width: 145px;
+    .navbar-col-b{
+        display: flex !important;
     }
 
 }
