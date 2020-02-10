@@ -8,12 +8,32 @@
 }
 #navbar-bg{
     display: none;
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #16658a;
+    justify-content: center;
+}
+#info-panel{
+    display: none;
+    background-color: #ccc;
+    border: 1px solid #444;
+    position: fixed;
+    top: 30%;
+    width: 180px;
+    flex-direction: column;
 }
 
 .navbar-row:hover{
     color: #333;
     cursor: pointer;
     background-color: #aaa;
+}
+.active-navbar-row{
+    background-color: #aaa;
+    color: #333 !important;
+    cursor: default !important;
 }
 .navbar-icon{
     height: 100%;
@@ -27,7 +47,7 @@
     height: 45px;
 }
 .navbar-h4{
-    margin-top: 8px;
+    margin-top: 10px;
     padding-right: 20px;
     padding-left: 10px;
     font-weight: 500;
@@ -57,11 +77,6 @@ a.navbar-row:hover{
 @media (min-width: 992px){
     #navbar-bg{
         display: flex;
-        position: fixed;
-        left: 0px;
-        width: 200px;
-        height: 100%;
-        background-color: #16658a;
     }
     #navbar-container{
         left: 10px;
@@ -70,8 +85,13 @@ a.navbar-row:hover{
     #hamburger-stack-container{
         display: none;
     }
+    #info-panel{
+        display: flex;
+    }
+
     .hide{
         display: flex;
         width: 145px;
     }
+
 }
