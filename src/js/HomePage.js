@@ -12,7 +12,8 @@ import {
     faHtml5,
     faBootstrap,
     faGoogle,
-    faJsSquare
+    faJsSquare,
+    faGitAlt
 } from '@fortawesome/free-brands-svg-icons';
 import { 
     faDatabase,
@@ -73,6 +74,7 @@ function HomePage() {
                         <li><FontAwesomeIcon className="mini-icon" icon={faBootstrap} />Bootstrap</li>
                         <li><FontAwesomeIcon className="mini-icon" icon={faVrCardboard} />Pixi.js (2d Engine)</li>
                         <li><FontAwesomeIcon className="mini-icon" icon={faGoogle} />Google Firebase / Firestore</li>
+                        <li><FontAwesomeIcon className="mini-icon" icon={faGitAlt} />Git Version Control</li>
                         <li><FontAwesomeIcon className="mini-icon" icon={faDatabase} />MySQL</li>
                         <li><FontAwesomeIcon className="mini-icon" icon={faMobile} />Mobile First / Responsive</li>
                     </ul>
