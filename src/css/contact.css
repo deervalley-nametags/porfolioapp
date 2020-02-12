@@ -1,3 +1,37 @@
+tspan{
+    transform: rotate(-90deg) !important;
+}
+
+#contact-email{
+    color: #fa4b41;
+}
+#contact-phone{
+    color: #6bb35b;
+}
+#contact-y-axis{
+    transform: rotate(-90deg) !important;
+}
+#contact-chart{
+    border: 1px solid black;
+}
+#contact-chart-top{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.contact-col{
+    display: flex;
+    flex-direction: row;
+}
 .contact-icon{
     font-size: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.testimg{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    background-color: green;
 }

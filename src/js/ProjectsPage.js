@@ -13,57 +13,70 @@ const mdSize = 12;
 const lgSize = 6;
 const xlSize = 4;
 
-function ProjectsPage() {
-    return (
-      <Container>
-        <Row>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-              <h4 className="projects-h4">DEER VALLEY NAMETAGS</h4>
-              <p className="font-grey">An App for Company-Wide Nametags</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">SYNESTHESIA TRAINING</h4>
-              <p className="font-grey">Training Note-Color Association</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">PURE MOLD SOLUTION</h4>
-              <p className="font-grey">San Antonio Mold Removal Company</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">RS GOLDSHARK</h4>
-              <p className="font-grey">Virtual Currency Seller's Site</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">CHAT APPLICATION</h4>
-              <p className="font-grey">Node-based Web Live Chat</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">ELEVATOR MAN (GAME)</h4>
-              <p className="font-grey">A Game With... Elevators!</p>
-            </div>
-          </Col>
-          <Col className="project-tile" xs={xsSize} md={mdSize} lg={lgSize} xl={xlSize}>
-            <div className="project-tile-inner">
-            <h4 className="projects-h4">SUBWOOFER WIRING</h4>
-              <p className="font-grey">Subwoofer Wiring Diagram App</p>
-            </div>
-          </Col>
+//preload projects
+const projectList = [{
+  id: 0,
+  title: "DEER VALLEY NAMETAGS",
+  subtext: "An App for Company-Wide Nametags",
+  gif: 0,
+  page: 0
+},{
+  id: 1,
+  title: "SYNESTHESIA TRAINING",
+  subtext: "Training Note-Color Association",
+  gif: 0,
+  page: 0
+},{
+  id: 2,
+  title: "PURE MOLD SOLUTION",
+  subtext: "San Antonio Mold Removal Company",
+  gif: 0,
+  page: 0
+},{
+  id: 3,
+  title: "RS GOLDSHARK",
+  subtext: "Virtual Currency Seller's Site",
+  gif: 0,
+  page: 0
+},{
+  id: 4,
+  title: "CHAT APPLICATION",
+  subtext: "Node-based Web Live Chat",
+  gif: 0,
+  page: 0
+},{
+  id: 5,
+  title: "ELEVATOR MAN (GAME)",
+  subtext: "A Game With... Elevators!",
+  gif: 0,
+  page: 0
+},{
+  id: 6,
+  title: "SUBWOOFER WIRING",
+  subtext: "Subwoofer Wiring Diagram App",
+  gif: 0,
+  page: 0
+}];
 
-          <Col></Col>
-        </Row>
-      </Container>
-    );
-  }
+function ProjectsPage() {
+  return (
+    <Container>
+      <Row>
+        { projectList.map((listItem) => 
+          //for each, list out all the projects in columns
+          <Col className="project-tile" key={ listItem.id } xs={ xsSize } md={ mdSize } lg={ lgSize } xl={ xlSize }>
+            <div className="project-tile-inner">
+              <h4 className="projects-h4">{ listItem.title }</h4>
+              <p className="font-grey">{ listItem.subtext }</p>
+            </div>
+          </Col>
+        ) }
+        
+        {/* empty column just so bootstrap doesnt try to center last column if its odd */}
+        <Col></Col>
+      </Row>
+    </Container>
+  );
+}
   
   export default ProjectsPage;

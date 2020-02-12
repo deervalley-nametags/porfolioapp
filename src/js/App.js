@@ -17,10 +17,16 @@ const ContactPage = lazy( () => import('./ContactPage.js'));
 const ProjectsPage = lazy( () => import('./ProjectsPage.js'));
 
 //lazy load spinner
-const renderLoader = () => <Spinner variant="danger" animation="border" role="status"><span className="sr-only">Loading...</span></Spinner>;
+const renderLoader = (
+  <Spinner variant="danger" animation="border" role="status">
+    <span className="sr-only">
+      Loading...
+    </span>
+  </Spinner>
+);
 
 
-//start main app
+//start main app: mainly routing
 function App() {
   return (
     <Router>
